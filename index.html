@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Jandira Rodríguez | Soluciones digitales</title>
+    <meta name="description" content="Soluciones digitales para tu negocio. Automatizaciones con IA, software a medida y soluciones digitales.">
+    <meta name="theme-color" content="#05030c">
+    <meta name="color-scheme" content="dark">
+    <meta property="og:title" content="Jandira Rodríguez">
+    <meta property="og:description" content="Soluciones digitales para tu negocio">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://api.fontshare.com">
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="atmosphere" aria-hidden="true">
+      <div class="glow glow-violet"></div>
+      <div class="glow glow-violet-soft"></div>
+      <canvas id="field" class="field"></canvas>
+    </div>
+
+    <main class="stage">
+      <div class="shell">
+        <article class="card">
+          <header class="identity">
+            <div class="mark">
+              <img id="brand-logo" alt="" hidden>
+              <span class="monogram" aria-hidden="true">JR</span>
+            </div>
+            <h1>Jandira Rodríguez</h1>
+            <p class="tagline">Soluciones digitales para tu negocio</p>
+            <p class="website" id="website" hidden></p>
+          </header>
+
+          <nav class="actions" id="contacto" aria-label="Acciones de contacto">
+            <a class="btn" id="btn-whatsapp" href="#">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor" d="M12.04 3C7.31 3 3.5 6.73 3.5 11.36c0 1.46.39 2.88 1.13 4.13L3.4 21l5.66-1.18a8.7 8.7 0 0 0 2.98.52h.01c4.73 0 8.55-3.73 8.55-8.36C20.6 6.73 16.77 3 12.04 3Zm4.9 11.86c-.2.58-1.18 1.1-1.64 1.16-.42.06-.96.08-1.55-.1-.36-.1-.82-.26-1.41-.51-2.48-1.07-4.1-3.57-4.22-3.74-.12-.16-1.01-1.34-1.01-2.56 0-1.22.64-1.82.87-2.07.22-.24.49-.3.65-.3h.47c.15 0 .35-.06.55.42.2.49.7 1.7.76 1.82.06.13.1.27.02.44-.08.16-.12.27-.24.41-.12.14-.25.32-.36.43-.12.12-.24.24-.1.47.13.24.6.99 1.29 1.6.89.79 1.64 1.04 1.88 1.16.24.12.38.1.52-.06.14-.16.6-.7.76-.94.16-.24.32-.2.54-.12.22.08 1.4.66 1.64.78.24.12.4.18.46.28.06.1.06.58-.14 1.16Z"/>
+              </svg>
+              <span>WhatsApp</span>
+            </a>
+            <a class="btn" id="btn-email" href="mailto:Jandirarodriguez11@gmail.com">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor" d="M3.5 6.75A2.75 2.75 0 0 1 6.25 4h11.5a2.75 2.75 0 0 1 2.75 2.75v10.5A2.75 2.75 0 0 1 17.75 20H6.25a2.75 2.75 0 0 1-2.75-2.75V6.75Zm2.2-.25 6.05 4.54c.16.12.38.12.54 0L18.3 6.5H5.7Zm12.8 1.72-5.15 3.86a2.25 2.25 0 0 1-2.7 0L5.5 8.22v9.03c0 .69.56 1.25 1.25 1.25h11.5c.69 0 1.25-.56 1.25-1.25V8.22Z"/>
+              </svg>
+              <span>Email</span>
+            </a>
+            <a class="btn" href="#servicios">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor" d="M4 5.75A1.75 1.75 0 0 1 5.75 4h3.5A1.75 1.75 0 0 1 11 5.75v3.5A1.75 1.75 0 0 1 9.25 11h-3.5A1.75 1.75 0 0 1 4 9.25v-3.5Zm9 0A1.75 1.75 0 0 1 14.75 4h3.5A1.75 1.75 0 0 1 20 5.75v3.5A1.75 1.75 0 0 1 18.25 11h-3.5A1.75 1.75 0 0 1 13 9.25v-3.5ZM4 14.75A1.75 1.75 0 0 1 5.75 13h3.5A1.75 1.75 0 0 1 11 14.75v3.5A1.75 1.75 0 0 1 9.25 20h-3.5A1.75 1.75 0 0 1 4 18.25v-3.5Zm9 0A1.75 1.75 0 0 1 14.75 13h3.5A1.75 1.75 0 0 1 20 14.75v3.5A1.75 1.75 0 0 1 18.25 20h-3.5A1.75 1.75 0 0 1 13 18.25v-3.5Z"/>
+              </svg>
+              <span>Servicios</span>
+            </a>
+            <a class="btn" id="btn-save" href="contacto.vcf" download="jandira-rodriguez.vcf">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor" d="M12 3.5a.75.75 0 0 1 .75.75v8.19l2.22-2.22a.75.75 0 1 1 1.06 1.06l-3.5 3.5a.75.75 0 0 1-1.06 0l-3.5-3.5a.75.75 0 1 1 1.06-1.06l2.22 2.22V4.25A.75.75 0 0 1 12 3.5ZM5.75 14a.75.75 0 0 1 .75.75v2.5c0 .69.56 1.25 1.25 1.25h8.5c.69 0 1.25-.56 1.25-1.25v-2.5a.75.75 0 0 1 1.5 0v2.5A2.75 2.75 0 0 1 16.25 20h-8.5A2.75 2.75 0 0 1 5 17.25v-2.5a.75.75 0 0 1 .75-.75Z"/>
+              </svg>
+              <span>Guardar contacto</span>
+            </a>
+          </nav>
+
+          <p class="status" id="status" role="status" aria-live="polite"></p>
+
+          <section class="services" id="servicios" aria-labelledby="servicios-titulo">
+            <h2 id="servicios-titulo">Servicios</h2>
+            <ul>
+              <li>Automatizaciones con IA</li>
+              <li>Software a medida</li>
+              <li>Soluciones digitales para negocios</li>
+            </ul>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
