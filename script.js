@@ -85,7 +85,7 @@
     var given = parts[0] || "";
     var family = parts.slice(1).join(" ");
     var services = Array.prototype.map.call(
-      document.querySelectorAll("#servicios li"),
+      document.querySelectorAll("#servicios h3"),
       function (item) {
         return item.textContent.trim();
       }
